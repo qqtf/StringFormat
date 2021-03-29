@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace StringFormat
@@ -7,7 +8,11 @@ namespace StringFormat
 	{
 		static void Main(string[] args)
 		{
-			string[] inputs = new string[] { "3", "1/1", "1 3/4" };  // replace array by list to expand for an unknown number of strings to be splitted
+			List<string> inputs = new List<string> { "3", "1/1", "1 3/4" };  // replace array by list to expand for an unknown number of strings to be splitted
+
+			inputs.Add("2/2");
+			inputs.Add("5");
+			inputs.Add("2 4/5");
 
 			foreach (string input in inputs)
 			{
